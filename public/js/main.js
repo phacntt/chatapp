@@ -70,3 +70,12 @@ function outputUser(users) {
   userList.innerHTML = `${users.map(user => `<li>${user.username}</li>`).join('')}`;
 
 }
+
+// Notification user when leave
+document.getElementById('leave-btn').addEventListener('click', () => {
+  const leaveRoom = confirm('Are you sure leave the chatroom?');
+  if(leaveRoom) {
+    window.location = "../index.html";
+  } else {
+  }
+});
